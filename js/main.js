@@ -9,7 +9,7 @@ const pantalonBlanco = 6000;
 
 let compraProducto = (mostrar) => {
     alert("¡Bienvenido a Avellaneda!");
-    let limite = parseInt(prompt("¿Cuantos productos desea elegir? Del 1 al 6"));
+    let limite = parseInt(prompt("¿Cuantos productos desea elegir?"));
     // POR SI ESCRIBE STRING EN VEZ DE NUMERO
     if (isNaN(limite)) {
         alert("Elija un número por favor.")
