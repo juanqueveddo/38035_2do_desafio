@@ -1,0 +1,12 @@
+* {
+    font-family: sans-serif;
+}
+
+h1 {
+    background-color: yellow;
+    display: inline-block;
+    padding: 10px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 45px;
+}
