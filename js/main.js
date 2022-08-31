@@ -1,11 +1,6 @@
-// SIMULADOR INTERACTIVO
+// INCORPORANDO ARRAYS
 
-const remeraNegra = 1500;
-const remeraBlanca = 1500;
-const buzoNegro = 4000;
-const buzoBlanco = 4000;
-const pantalonNegro = 6000;
-const pantalonBlanco = 6000;
+const tienda = [{ "remeraNegra": 1500 }, { "remeraBlanca": 1500 }, { "buzoNegro": 4000 }, { "buzoBlanco": 4000 }, { "pantalonNegro": 6000 }, { "pantalonBlanco": 6000 }]
 
 let compraProducto = (mostrar) => {
     alert("¡Bienvenido a Avellaneda!");
@@ -18,17 +13,17 @@ let compraProducto = (mostrar) => {
     for (i = 1; i <= limite; i++) {
         let ropa = prompt("Tenemos \n 1. Remera negra \n 2. Remera blanca \n 3. Buzo negro \n 4. Buzo blanco \n 5. Pantalón negro \n 6. Pantalón blanco");
         if (ropa == "1") {
-            console.log("$" + remeraNegra)
+            console.log("El precio de la remera negra es de $" + tienda[0].remeraNegra)
         } else if (ropa == "2") {
-            console.log("$" + remeraBlanca)
+            console.log("El precio del remera blanca es de $" + tienda[1].remeraBlanca)
         } else if (ropa == "3") {
-            console.log("$" + buzoNegro)
+            console.log("El precio del buzo negro es de $" + tienda[2].buzoNegro)
         } else if (ropa == "4") {
-            console.log("$" + buzoBlanco)
+            console.log("El precio del buzo blanco es de $" + tienda[3].buzoBlanco)
         } else if (ropa == "5") {
-            console.log("$" + pantalonNegro)
+            console.log("El precio del pantalon negro es de $" + tienda[4].pantalonNegro)
         } else if (ropa == "6") {
-            console.log("$" + pantalonBlanco)
+            console.log("El precio del pantalon blanco es de $" + tienda[5].pantalonBlanco)
         }
     }
     alert("¡Gracias por comprar en Avellaneda, hasta luego!")
