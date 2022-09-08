@@ -1,6 +1,10 @@
 // PRIMERA ENTREGA PROYECTO FINAL
 
+// VARIABLE CONST CON ARRAY Y OBJETOS
+
 const tienda = [{ "remeraNegra": 1500 }, { "remeraBlanca": 1500 }, { "buzoNegro": 4000 }, { "buzoBlanco": 4000 }, { "pantalonNegro": 6000 }, { "pantalonBlanco": 6000 }]
+
+// ARROW FUNCTION
 
 let compraProducto = (mostrar) => {
     alert("¡Bienvenido a HOUKY!");
@@ -9,7 +13,7 @@ let compraProducto = (mostrar) => {
     if (isNaN(limite)) {
         alert("Elija un número por favor.")
         return
-    }
+    } // BUCLE FOR
     for (i = 1; i <= limite; i++) {
         let ropa = prompt("Tenemos \n 1. Remera negra \n 2. Remera blanca \n 3. Buzo negro \n 4. Buzo blanco \n 5. Pantalón negro \n 6. Pantalón blanco");
         if (ropa == "1") {
@@ -28,5 +32,7 @@ let compraProducto = (mostrar) => {
     }
     alert("¡Gracias por comprar en Houky, hasta luego!")
 }
+
+// LLAMO A LA FUNCTION
 
 compraProducto()
